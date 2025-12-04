@@ -168,14 +168,14 @@ body {
 }
 
 .apple-store-logo {
-  width: 180px;  
+  width: 160px;  
   height: auto;
   display: block;
 }
 
 .app-learnmore {
-  margin: -20px auto;
-  width: 250px;
+  margin: 10px auto;
+  width: 200px;
 }
 /*Learn more Hover*/
 .btn-primary {
