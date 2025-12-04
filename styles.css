@@ -258,7 +258,7 @@ body {
   top: 20px;  /* 少し下げて重ねるニュアンス */
 }
 
-.value-item h3 {
+.value-item h2 {
   margin-top: -10px; /* 画像と近づける */
   font-size: 28px;
 }
