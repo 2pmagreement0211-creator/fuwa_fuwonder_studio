@@ -108,3 +108,14 @@ main {
 body {
   text-align: center;
 }
+
+.hero-character {
+  width: 350px;   /* ここを好きなサイズに */
+  height: auto;
+}
+
+.hero-characters {
+  display: flex;
+  gap: 20px; /* キャラの間隔を調整 */
+  justify-content: center;
+}
