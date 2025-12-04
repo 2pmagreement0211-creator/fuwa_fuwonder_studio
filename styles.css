@@ -121,12 +121,12 @@ body {
 }
 
 .works-grid {
-  width: 350px;   /* ここを好きなサイズに */
+  width: 1000px;   /* ここを好きなサイズに */
   height: auto;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  margin: 0 auto;
 }
 
-.works-grid {
-  display: flex;
-  gap: 20px; /* キャラの間隔を調整 */
-  justify-content: center;
-}
+
