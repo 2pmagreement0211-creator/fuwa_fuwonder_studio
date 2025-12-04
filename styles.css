@@ -27,3 +27,73 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* ====== Header layout ====== */
+
+.site-header {
+  background: #f9f3e7;          /* 背景色（全体と揃える） */
+  padding: 16px 64px;           /* 上下・左右の余白 */
+}
+
+/* ロゴ＋ナビを横並びにする箱 */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;               /* 中央寄せ */
+  display: flex;
+  align-items: center;          /* 縦方向センター */
+  justify-content: space-between;
+}
+
+/* ロゴのサイズ調整（お好みで） */
+.logo img {
+  height: 36px;                 /* Figmaに近い高さに調整 */
+  width: auto;
+}
+
+/* ナビゲーション（ul）を横並びに */
+.main-nav ul {
+  display: flex;
+  gap: 56px;                    /* メニュー同士の間隔。Figma見ながら調整 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ナビのリンクの見た目 */
+.main-nav a {
+  text-decoration: none;
+  color: #8c6f5a;               /* Figmaの文字色に近づける */
+  font-family: "Molengo", sans-serif;
+  font-size: 14px;
+}
+
+/* ホバーしたときの色（お好みで） */
+.main-nav a:hover {
+  color: #c86a5b;
+}
+
+/* 言語切り替えは右上に寄せる */
+.language-switcher {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  font-size: 12px;
+}
+
+.language-switcher button {
+  border: none;
+  background: none;
+  font-family: "Molengo", sans-serif;
+  cursor: pointer;
+  color: #8c6f5a;
+}
+
+.language-switcher button:hover {
+  color: #c86a5b;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
