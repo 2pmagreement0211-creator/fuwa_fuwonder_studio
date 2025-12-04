@@ -107,9 +107,20 @@ main {
 body {
   text-align: center;
 }
-
+/*フッター*/
+.site-footer {
+  top: 100;
+  bottom: 20;
+}
+/*Top Page*/
+.hero-title {
+  top: 80px;
+  bottom: 20px;
+  fontsize: 20px;
+}
+/*トップページキャラクター*/
 .hero-character {
-  width: 200px;   /* ここを好きなサイズに */
+  width: 190px;  
   height: auto;
 }
 
@@ -117,19 +128,14 @@ body {
   display: flex;
   gap: 20px; /* キャラの間隔を調整 */
   justify-content: center;
-  padding: 50px 64px;
+  padding: 40px 64px;
 }
 
-.works-grid {
-  width: 1000px;   /* ここを好きなサイズに */
-  height: auto;
-  justify-content: center;
-  gap: 20px;
-  display: flex;
-  margin: 0 auto;
-  bottom: 70px;
+.hero-tagline {
+  bottom: 80px;
 }
 
+/*My Furry Friends Section*/
 .app-inner {
   display: flex;
   align-items: center;     /* 上下の位置を揃える */
@@ -140,12 +146,12 @@ body {
 }
 
 .app-icon {
-  width: 300px;  /* 好きなサイズに調整 可愛い */
+  width: 500px;  /* 好きなサイズに調整 可愛い */
   height: auto;
 }
 
 .app-title {
-  width: 300px;  /* ここも好みで */
+  width: 600px;  /* ここも好みで */
   height: auto;
   display: block;
   margin-bottom: 20px;
@@ -155,29 +161,15 @@ body {
   display: flex;
   flex-direction: column; /* 縦に並べる */
   align-items: flex-start; /* 左揃え（Figmaに近い感じ） */
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
 .app-learnmore {
   margin: 0 auto;
+  width: 300px;
 }
-
-.hero-title {
-  top: 50px;
-  bottom: 20px;
-  fontsize: 20px;
-}
-
-.hero-tagline {
-  bottom: 70px;
-}
-
-.works-title {
-  top: 70px;
-  bottom: 20px;
-}
-
+/*Learn more Hover*/
 .btn-primary {
   position: relative;
   display: inline-block;
@@ -209,3 +201,20 @@ body {
 .btn-primary:hover img:last-child {
   opacity: 1;
 }
+
+/*Work Experience*/
+.works-title {
+  top: 80px;
+  bottom: 50px;
+}
+
+.works-grid {
+  width: 1000px;   /* ここを好きなサイズに */
+  height: auto;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  margin: 0 auto;
+  bottom: 70px;
+}
+
