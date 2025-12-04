@@ -158,13 +158,17 @@ body {
   width: 700px;  
   height: auto;
   display: block;
+  height: auto;
 }
 
 .app-content {
   display: flex;
   flex-direction: column; /* 縦に並べる */
   align-items: flex-start; /* 左揃え（Figmaに近い感じ） */
-  width: 220px;
+}
+
+.app-store-logo {
+  width: 220px;  
   height: auto;
 }
 
