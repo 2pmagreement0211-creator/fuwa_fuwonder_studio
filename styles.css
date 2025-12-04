@@ -212,7 +212,8 @@ body {
 
 /*Work Experience*/
 .works-title {
-  margin: 50px;
+  margin-top: 80px;
+  margin-bottom: 70px,
 }
 
 .works-grid {
