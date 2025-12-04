@@ -270,3 +270,43 @@ body {
   margin-right: auto;
 }
 
+.value-item {
+  display: flex;
+  justify-content: center;
+}
+
+.value-image-wrapper {
+  position: relative;         /* 子要素の absolute の基準にする */
+  width: 350px;               /* 画像サイズに合わせて調整 */
+}
+
+.value-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ★ 画像の中央に重ねるテキスト部分 */
+.value-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 完全ど真ん中に配置 */
+  text-align: center;
+
+  /* 背景をつけて読みやすくしたい場合は以下 */
+  /* background: rgba(255, 255, 255, 0.6); */
+  /* padding: 10px; */
+}
+
+.value-text h3 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "PaytoneOne";
+}
+
+.value-text p {
+  font-size: 14px;
+  font-family: "Molengo";
+  margin-top: 8px;
+}
