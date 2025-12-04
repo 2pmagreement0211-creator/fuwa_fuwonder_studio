@@ -148,6 +148,7 @@ body {
 .app-icon {
   width: 500px;  /* 好きなサイズに調整 可愛い */
   height: auto;
+  right: 30px;
 }
 
 .app-title {
@@ -155,6 +156,7 @@ body {
   height: auto;
   display: block;
   margin-bottom: 20px;
+  left: 20px;
 }
 
 .app-content {
@@ -163,6 +165,7 @@ body {
   align-items: flex-start; /* 左揃え（Figmaに近い感じ） */
   width: 300px;
   height: auto;
+  left: 20px;
 }
 
 .app-learnmore {
