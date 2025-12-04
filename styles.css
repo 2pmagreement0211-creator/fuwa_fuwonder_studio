@@ -261,14 +261,10 @@ body {
   top: 20px;  /* 少し下げて重ねるニュアンス */
 }
 
-.value-item h2 {
-  margin-top: -10px; /* 画像と近づける */
-  font-size: 28px;
-}
 
 .value-item p {
-  margin-top: 10px;
-  max-width: 280px;
+  margin-top: 0px;
+  max-width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -280,7 +276,7 @@ body {
 
 .value-image-wrapper {
   position: relative;         /* 子要素の absolute の基準にする */
-  width: 400px;               /* 画像サイズに合わせて調整 */
+  width: 450px;               /* 画像サイズに合わせて調整 */
 }
 
 .value-image-wrapper img {
@@ -292,15 +288,15 @@ body {
 /* ★ 画像の中央に重ねるテキスト部分 */
 .value-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 完全ど真ん中に配置 */
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%); /* 完全ど真ん中に配置 */
   text-align: center;
 }
 
 .value-text h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "PaytoneOne";
 }
 
