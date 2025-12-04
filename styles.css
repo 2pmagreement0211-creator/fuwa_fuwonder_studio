@@ -166,7 +166,7 @@ body {
   align-items: center; 
 }
 
-.apple-store-logo img {
+.apple-store-logo {
   width: 180px;  
   height: auto;
   display: block;
