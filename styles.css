@@ -163,7 +163,7 @@ body {
 .app-content {
   display: flex;
   flex-direction: column; /* 縦に並べる */
-  align-items: flex-start; /* 左揃え（Figmaに近い感じ） */
+  align-items: center; /* 左揃え（Figmaに近い感じ） */
 }
 
 .app-store-logo {
