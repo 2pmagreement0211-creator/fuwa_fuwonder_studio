@@ -143,7 +143,7 @@ body {
   display: flex;
   align-items: center;     /* 上下の位置を揃える */
   justify-content: center; /* 中央寄せ */
-  gap: 30px;               /* 左右の余白 */
+  gap: 60px;               /* 左右の余白 */
   margin: 60px auto;
   max-width: 1200px;       /* セクションの最大幅 */
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .app-title {
-  width: 700px;  
+  width: 600px;  
   height: auto;
   display: block;
   height: auto;
