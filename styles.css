@@ -155,7 +155,7 @@ body {
 }
 
 .app-title {
-  width: 600px;  
+  width: 550px;  
   height: auto;
   display: block;
 }
@@ -166,7 +166,7 @@ body {
   align-items: center; 
 }
 
-.app-store-logo {
+.apple-store-logo img {
   width: 220px;  
   height: auto;
   display: block;
