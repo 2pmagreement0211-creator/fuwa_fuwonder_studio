@@ -178,4 +178,34 @@ body {
   bottom: 20px;
 }
 
+.btn-primary {
+  position: relative;
+  display: inline-block;
+}
 
+.btn-primary img {
+  display: block;
+}
+
+/* 最初に表示される画像（default） */
+.btn-primary img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* ホバー画像（hover） */
+.btn-primary img:last-child {
+  opacity: 0; /* 最初は非表示 */
+  transition: opacity 0.25s ease;
+}
+
+/* ホバーしたら反転する */
+.btn-primary:hover img:first-child {
+  opacity: 0;
+}
+
+.btn-primary:hover img:last-child {
+  opacity: 1;
+}
