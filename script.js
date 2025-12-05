@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const isNewTab = link.target === '_blank';
 
     if (isExternal || isAnchor || isNewTab) {
-      return; // これらは通常通り
+      return; 
     }
 
     // 内部リンクだけフェードアウト遷移
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ③ 言語切り替え（EN / JP）
   document.querySelectorAll("[data-lang-btn]").forEach(btn => {
     btn.addEventListener("click", () => {
-      const selected = btn.dataset.langBtn; // "en" or "jp"
+      const selected = btn.dataset.langBtn;
 
       // data-lang を持つ要素をすべて対象にする
       document.querySelectorAll("[data-lang]").forEach(el => {
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ④ ここから下は塗り絵の処理 -----------------
+  // ④ 塗り絵の処理 
   const nurie = document.querySelector(".Nurie");
   if (nurie) {
     const mapping = {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const targetImg = document.querySelector(`.${layerClass} img`);
         if (!targetImg) return;
 
-        // すでにONならOFFに（トグル）
+        // すでにONならOFFに
         if (targetImg.classList.contains("visible")) {
           targetImg.classList.remove("visible");
           button.classList.remove("active");
