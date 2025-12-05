@@ -404,5 +404,6 @@ body {
 .Snufy-last-paragraph {
   width: 1000px;
   margin: 0 auto;  
+  justify-content: center;
 }
   
