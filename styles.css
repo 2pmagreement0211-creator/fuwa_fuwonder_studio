@@ -485,31 +485,27 @@ body {
 
 .The-world-of-MFF {
   width: 1000px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
-  gap: 0px;
+  gap: 40px;                /* テキストと画像の間 */
   padding: 70px 0;
-  align-items: center;    
-  justify-content: center; 
+  align-items: center;      /* 縦方向の中心を揃える */
+  justify-content: center;  /* 横方向の中心を揃える */
 }
 
 .The-world-of-MFF-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* ← 左寄せにする正しい指定 */
   justify-content: center;
   text-align: left;
 }
 
-.The-world-of-MFF-text h3 {
-  margin-top: 20px;   /* h3 の上の余白 */
-  margin-bottom: 8px; /* h3 の下の余白を短めに */
-}
-
-.The-world-of-MFF-text p {
-  margin-top: 0px;    /* デフォルト margin を消す */
-  margin-bottom: 20px; /* 次の H3 までの間隔 */
-  line-height: 1.6;   /* 行間（文章内の間）を整える */
+/* スクリーンショット画像を2枚並列にする */
+.MFF-screenshots {
+  display: flex;
+  flex-direction: row; 
+  gap: 10px;
+  align-items: center;
 }
 
 .MFF-screenshots img {
