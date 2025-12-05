@@ -232,7 +232,8 @@ body {
 .about-hero-inner {
   width: 800px;
   height: auto;
-  padding: 40xp, auto;
+  margin: 0 auto;  
+  padding: 80xp, auto;
 }
 
 .about-hero-tagline {
