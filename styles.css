@@ -577,8 +577,8 @@ body {
 /* --- 塗り絵全体の親エリア --- */
 .Nurie {
   position: relative;      /* 子要素を absolute で重ねるために必要 */
-  width: 600px;            /* 画像と同じ幅に調整 */
-  height: 600px;           /* 画像と同じ高さに調整 */
+  width: 800px;            /* 画像と同じ幅に調整 */
+  height: 800px;           /* 画像と同じ高さに調整 */
   margin: 0 auto;          /* 中央揃え */
 }
 
