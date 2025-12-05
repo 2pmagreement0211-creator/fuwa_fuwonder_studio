@@ -612,7 +612,82 @@ body {
   opacity: 1;
 }
 
+/* Nurie のベース以外の画像をデフォルト非表示 */
+.Nurie div img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+/* ボタン全体のコンテナ */
+.Nurie-button {
+  width: 1000px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 上段・下段のボタンを中央に並列 */
+.Nurie-button-1,
+.Nurie-button-2 {
+  display: flex;
+  justify-content: center;   /* 中央揃え */
+  gap: 40px;                 /* 各ボタンの間隔 */
+  flex-wrap: wrap;           /* 万一幅が狭いときに折り返し */
+}
+
+/* 各ボタンの基本スタイル */
+.Nurie-button-1 h2,
+.Nurie-button-2 h2 {
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ホバー演出（薄く光る感じ） */
+.Nurie-button-1 h2:hover,
+.Nurie-button-2 h2:hover {
+  opacity: 0.6;
+}
+
+/* それぞれ好きな色に変更できる */
+.Nurie-button-marketing {
+  color: #FD8A7A;   /* 例：ピンク */
+}
+
+.Nurie-button-Snowboarding {
+  color: #A5EBFD;   /* 例：スノーボードの青 */
+}
+
+.Nurie-button-Family_and_Friends {
+  color: #FDDF27;
+}
+
+.Nurie-button-Animals {
+  color: #A9906B;
+}
+
+.Nurie-button-Life_in_Canada {
+  color: #44423E;
+}
+
+.Nurie-button-Games {
+  color: #E4DDD4;
+}
+
+.Nurie-button-Violin_and_Bass_Guitar {
+  color: #CBA04A;
+}
+
+.Nurie-button-Badminton {
+  color: #684029;
+}
+
+.What_makes_this_world_last_paragraph p {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
 
   
   
