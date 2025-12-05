@@ -452,7 +452,7 @@ body {
   width: 1000px;
   margin: 0 auto; 
   display: flex;
-  gap: 10px;
+  gap: 20px;
   padding: 70px 0;
   align-items: center;    
   justify-content: center; 
@@ -466,11 +466,11 @@ body {
   text-align: left;
 }
 
-.Snuffy-Meltan-photos {
+.Romeo-photo {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  gap: 3px;
+  gap: 15px;
 }
 
 
