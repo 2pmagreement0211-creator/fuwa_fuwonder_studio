@@ -233,11 +233,10 @@ body {
   width: 800px;
   height: auto;
   margin: 0 auto;  
-  padding: 80xp, auto;
 }
 
 .about-hero-tagline {
-  padding: 30px, auto;
+  padding: 60px, auto;
 }
 
 .value-title {
@@ -262,7 +261,7 @@ body {
 /* 下の２つを横並びにして、上にかぶせる */
 .values-bottom-row {
   display: flex;
-  gap: 40px;           /* 左右の間隔 */
+  gap: 50px;           /* 左右の間隔 */
   margin-top: -130px;  /* ここで「かぶせる」量を調整 */
 }
 
