@@ -34,44 +34,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ③ ここから下は塗り絵の処理（既存のやつ） -----------------
+  // ③ 言語切り替え（EN / JP）
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selected = btn.dataset.langBtn; // "en" or "jp"
 
-  const nurie = document.querySelector(".Nurie");
-  if (!nurie) {
-    return; // Nurie がないページではここで終了
-  }
-
-  const mapping = {
-    "Nurie-button-marketing": "Nurie-marketing",
-    "Nurie-button-Snowboarding": "Nurie-snowboarding",
-    "Nurie-button-Family_and_Friends": "Nurie-family_and_friends",
-    "Nurie-button-Animals": "Nurie-Animals",
-    "Nurie-button-Life_in_Canada": "Nurie-Life_in_Canada",
-    "Nurie-button-Games": "Nurie-Games",
-    "Nurie-button-Violin_and_Bass_Guitar": "Nurie-Violin_and_Bass_Guitar",
-    "Nurie-button-Badminton": "Nurie-badminton"
-  };
-
-  Object.keys(mapping).forEach(buttonClass => {
-    const button = document.querySelector(`.${buttonClass}`);
-    const layerClass = mapping[buttonClass];
-
-    if (!button) return;
-
-    button.addEventListener("click", () => {
-      const targetImg = document.querySelector(`.${layerClass} img`);
-
-      if (!targetImg) return;
-
-      // すでにONならOFFに
-      if (targetImg.classList.contains("visible")) {
-        targetImg.classList.remove("visible");
-        button.classList.remove("active");
-      } else {
-        // OFFならONに
-        targetImg.classList.add("visible");
-        button.classList.add("active");
-      }
+      // data-lang を持つ要素をすべて対象にする
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = (el.dataset.lang === selected) ? "inline" : "none";
+      });
     });
   });
+
+  // ④ ここから下は塗り絵の処理 -----------------
+  const nurie = document.querySelector(".Nurie");
+  if (nurie) {
+    const mapping = {
+      "Nurie-button-marketing": "Nurie-marketing",
+      "Nurie-button-Snowboarding": "Nurie-snowboarding",
+      "Nurie-button-Family_and_Friends": "Nurie-family_and_friends",
+      "Nurie-button-Animals": "Nurie-Animals",
+      "Nurie-button-Life_in_Canada": "Nurie-Life_in_Canada",
+      "Nurie-button-Games": "Nurie-Games",
+      "Nurie-button-Violin_and_Bass_Guitar": "Nurie-Violin_and_Bass_Guitar",
+      "Nurie-button-Badminton": "Nurie-badminton"
+    };
+
+    Object.keys(mapping).forEach(buttonClass => {
+      const button = document.querySelector(`.${buttonClass}`);
+      const layerClass = mapping[buttonClass];
+
+      if (!button) return;
+
+      button.addEventListener("click", () => {
+        const targetImg = document.querySelector(`.${layerClass} img`);
+        if (!targetImg) return;
+
+        // すでにONならOFFに（トグル）
+        if (targetImg.classList.contains("visible")) {
+          targetImg.classList.remove("visible");
+          button.classList.remove("active");
+        } else {
+          targetImg.classList.add("visible");
+          button.classList.add("active");
+        }
+      });
+    });
+  }
 });
