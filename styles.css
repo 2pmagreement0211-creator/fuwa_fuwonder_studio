@@ -295,15 +295,17 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto;  
+  margin-bottom: 80px;
 }
 
 .hairball-friends-logo img {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
 .hairball-friends-SnuffyandFriends {
-  width: 400px;
+  width: 600px;
   height: auto;
 }
 
@@ -312,6 +314,7 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto; 
 }
 
 .Muffuffu {
@@ -324,6 +327,7 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto; 
 }
 
 .Baffuffu {
@@ -336,6 +340,7 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto; 
 }
 
 .Fuffuffu {
@@ -348,6 +353,7 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto; 
 }
 
 .Moffuffu {
@@ -360,6 +366,7 @@ body {
   display: flex;
   gap: 60px;
   padding: 40px, auto;
+  margin: 0 auto; 
 }
 
 .Snuffy {
