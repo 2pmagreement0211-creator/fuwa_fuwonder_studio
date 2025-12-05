@@ -289,17 +289,3 @@ body {
   text-align: center;
   padding: 10px, 10px;     /* 円のフチに文字がくっつかないように余白 */
 }
-
-/* 細かく位置をずらしたければここで調整 */
-.value-text-left {
-  /* 例：ほんの少し左寄せにしたい時
-     transform: translate(-52%, -50%);
-  */
-}
-
-.value-text-right {
-  /* 例：ほんの少し右寄せにしたい時
-     transform: translate(-48%, -50%);
-  */
-}
-
