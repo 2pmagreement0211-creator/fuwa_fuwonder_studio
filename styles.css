@@ -290,3 +290,25 @@ body {
   text-align: center;
   padding: 10px, 10px;     /* 円のフチに文字がくっつかないように余白 */
 }
+
+/* ====== Hairball Friends layout ====== */
+.haorballfriends-hero-inner {
+  display: flex;
+  gap: 60px;
+  padding: 40px, auto;
+}
+
+.Muffuffu-container {
+  width: 1000;
+  display: flex;
+  gap: 60px;
+  padding: 40px, auto;
+}
+
+.Muffuffu {
+  align-items: center;    
+  justify-content: left;
+}
+
+
+  
