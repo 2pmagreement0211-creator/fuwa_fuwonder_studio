@@ -1,12 +1,8 @@
-// ページのHTMLが読み込まれてから動くようにする
 document.addEventListener("DOMContentLoaded", () => {
   const nurie = document.querySelector(".Nurie");
-  if (!nurie) return; // このページにNurieがないときは何もしない
+  if (!nurie) return;
 
-  // 塗り絵レイヤー（カラー）の画像たち
-  const layerImages = nurie.querySelectorAll("div img");
-
-  // ボタンと対応するレイヤーのマッピング
+  // 各レイヤーとボタンの対応
   const mapping = {
     "Nurie-button-marketing": "Nurie-marketing",
     "Nurie-button-Snowboarding": "Nurie-snowboarding",
@@ -18,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "Nurie-button-Badminton": "Nurie-badminton"
   };
 
-  // すべてのボタンにクリックイベントをつける
   Object.keys(mapping).forEach(buttonClass => {
     const button = document.querySelector(`.${buttonClass}`);
     const layerClass = mapping[buttonClass];
@@ -26,21 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!button) return;
 
     button.addEventListener("click", () => {
-      // いったん全レイヤーを非表示にする
-      layerImages.forEach(img => img.classList.remove("visible"));
+      const targetImg = document.querySelector(`.${layerClass} img`);
 
-      // 対応するレイヤーだけ表示
-      const targetLayerImg = document.querySelector(`.${layerClass} img`);
-      if (targetLayerImg) {
-        targetLayerImg.classList.add("visible");
+      // visible がついている＝今ON → OFFに戻す
+      if (targetImg.classList.contains("visible")) {
+        targetImg.classList.remove("visible");
+        button.classList.remove("active");
+      } 
+      // visible がついていない＝今OFF → ONにする
+      else {
+        targetImg.classList.add("visible");
+        button.classList.add("active");
       }
-
-      // ボタン側の「選択中」見た目用のクラスも付け外し
-      document
-        .querySelectorAll(".Nurie-button-1 h2, .Nurie-button-2 h2")
-        .forEach(h2 => h2.classList.remove("active"));
-
-      button.classList.add("active");
     });
   });
 });
