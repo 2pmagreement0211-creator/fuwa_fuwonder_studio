@@ -311,72 +311,92 @@ body {
 }
 
 .Muffuffu-container {
-  width: 1000;
+  width: 1000px;  
+  margin: 0 auto;  
   display: flex;
   gap: 60px;
-  padding: 40px, auto;
-  justify-content: center; 
-  align-items: center;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;     
+  text-align: left; 
 }
 
 .Muffuffu {
-  align-items: center;    
+  display: flex;
+  flex-direction: column;   /* h2 と p を縦並びに */
+  align-items: center;      /* 中央揃え */
   justify-content: center;
 }
 
 .Baffuffu-container {
-  width: 1000;
+  width: 1000px;  
+  margin: 0 auto;  
   display: flex;
   gap: 60px;
-  padding: 40px, auto;
-  justify-content: center; 
-  align-items: center;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;     
+  text-align: right;
 }
 
 .Baffuffu {
-  align-items: center;    
+  display: flex;
+  flex-direction: column;   /* h2 と p を縦並びに */
+  align-items: center;      /* 中央揃え */
   justify-content: center;
 }
 
 .Fuffuffu-container {
-  width: 1000;
+  width: 1000px;  
+  margin: 0 auto;  
   display: flex;
   gap: 60px;
-  padding: 40px, auto;
-  justify-content: center; 
-  align-items: center;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;     
+  text-align: left;
 }
 
 .Fuffuffu {
-  align-items: center;    
+  display: flex;
+  flex-direction: column;   /* h2 と p を縦並びに */
+  align-items: center;      /* 中央揃え */
   justify-content: center;
 }
 
 .Moffuffu-container {
-  width: 1000;
+  width: 1000px;  
+  margin: 0 auto;  
   display: flex;
   gap: 60px;
-  padding: 40px, auto;
-  justify-content: center; 
-  align-items: center;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;     
+  text-align: right;
 }
 
 .Moffuffu {
-  align-items: center;    
+  display: flex;
+  flex-direction: column;   /* h2 と p を縦並びに */
+  align-items: center;      /* 中央揃え */
   justify-content: center;
 }
 
 .Snuffy-container {
-  width: 1000;
+  width: 1000px;  
+  margin: 0 auto;  
   display: flex;
   gap: 60px;
-  padding: 40px, auto;
-  justify-content: center; 
-  align-items: center;
+  padding: 40px 0;
+  justify-content: center;
+  align-items: center;     
+  text-align: left;
 }
 
 .Snuffy {
-  align-items: center;    
+  display: flex;
+  flex-direction: column;   /* h2 と p を縦並びに */
+  align-items: center;      /* 中央揃え */
   justify-content: center;
 }
 
