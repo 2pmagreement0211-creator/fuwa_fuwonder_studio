@@ -414,12 +414,13 @@ body {
 
 /* ====== MFF layout ====== */
 .mff-header {
+  width: 1000px;
+  margin: 0 auto; 
   display: flex;
-  align-items: center;     /* 上下の位置を揃える */
-  justify-content: center; /* 中央寄せ */
-  gap: 60px;               /* 左右の余白 */
-  margin: 30px auto;
-  max-width: 1000px;       /* セクションの最大幅 */
+  gap: 60px;
+  padding: 40px 0;
+  align-items: center;    
+  justify-content: center; 
 }
 
 .mff-appicon {
@@ -430,10 +431,9 @@ body {
 
 .mff-app-content {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center; 
   gap: 10px;
-  margin-top: 15px;
 }
 
 .Mff-app-title img {
