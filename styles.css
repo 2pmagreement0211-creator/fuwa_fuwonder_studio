@@ -484,7 +484,7 @@ body {
   width: 1000px;
   margin: 0 auto; 
   display: flex;
-  gap: 10px;
+  gap: 0px;
   padding: 70px 0;
   align-items: center;    
   justify-content: center; 
@@ -508,11 +508,11 @@ body {
   justify-content: center; 
 }
 
-.The-world-of-MFF-text {
+.How-it-was-made {
   width: 1000px;
   margin: 0 auto; 
   display: flex;
-  padding: 70px 0;
+  padding: 0px 0;
   flex-direction: column;
   align-items: flex-start; /* ← 左寄せにする正しい指定 */
   justify-content: center;
