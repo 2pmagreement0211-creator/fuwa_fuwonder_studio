@@ -229,6 +229,15 @@ body {
 }
 
 /* ====== about layout ====== */
+.about-hero-tagline {
+  padding: 30px, auto;
+}
+
+.value-title {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
