@@ -297,6 +297,16 @@ body {
   padding: 40px, auto;
 }
 
+.hairball-friends-logo img {
+  width: 400px;
+  height: auto;
+}
+
+.hairball-friends-SnuffyandFriends {
+  width: 400px;
+  height: auto;
+}
+
 .Muffuffu-container {
   width: 1000;
   display: flex;
