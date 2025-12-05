@@ -229,6 +229,12 @@ body {
 }
 
 /* ====== about layout ====== */
+.about-hero-inner {
+  width: 800px;
+  height: auto;
+  padding: 40xp, auto;
+}
+
 .about-hero-tagline {
   padding: 30px, auto;
 }
