@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+[data-lang="jp"] {
+  display: none;
+}
+
 /* ページ全体のフェード用 */
 body {
   opacity: 0;
