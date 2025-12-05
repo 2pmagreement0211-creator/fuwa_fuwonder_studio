@@ -285,7 +285,7 @@ body {
 
 .value-image-wrapper {
   position: relative;         /* 子要素の absolute の基準にする */
-  width: 400px;               /* 画像サイズに合わせて調整 */
+  width: 350px;               /* 画像サイズに合わせて調整 */
 }
 
 .value-image-wrapper img {
