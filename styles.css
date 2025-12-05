@@ -287,7 +287,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 0 40px;     /* 円のフチに文字がくっつかないように余白 */
+  padding: 10px, 10px;     /* 円のフチに文字がくっつかないように余白 */
 }
 
 /* 細かく位置をずらしたければここで調整 */
