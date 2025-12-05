@@ -325,7 +325,7 @@ body {
 .Muffuffu {
   display: flex;
   flex-direction: column;   /* h2 と p を縦並びに */
-  align-items: center;      /* 中央揃え */
+  align-items: left;      /* 中央揃え */
   justify-content: center;
 }
 
@@ -343,7 +343,7 @@ body {
 .Baffuffu {
   display: flex;
   flex-direction: column;   /* h2 と p を縦並びに */
-  align-items: center;      /* 中央揃え */
+  align-items: right;      /* 中央揃え */
   justify-content: center;
 }
 
@@ -361,7 +361,7 @@ body {
 .Fuffuffu {
   display: flex;
   flex-direction: column;   /* h2 と p を縦並びに */
-  align-items: center;      /* 中央揃え */
+  align-items: left;      /* 中央揃え */
   justify-content: center;
 }
 
@@ -379,7 +379,7 @@ body {
 .Moffuffu {
   display: flex;
   flex-direction: column;   /* h2 と p を縦並びに */
-  align-items: center;      /* 中央揃え */
+  align-items: right;      /* 中央揃え */
   justify-content: center;
 }
 
@@ -397,11 +397,12 @@ body {
 .Snuffy {
   display: flex;
   flex-direction: column;   /* h2 と p を縦並びに */
-  align-items: center;      /* 中央揃え */
+  align-items: left;      /* 中央揃え */
   justify-content: center;
 }
 
 .Snufy-last-paragraph {
   width: 1000px;
+  margin: 0 auto;  
 }
   
