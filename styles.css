@@ -417,14 +417,14 @@ body {
   width: 1000px;
   margin: 0 auto; 
   display: flex;
-  gap: 60px;
+  gap: 50px;
   padding: 40px 0;
   align-items: center;    
   justify-content: center; 
 }
 
 .mff-appicon {
-  width: 400px; 
+  width: 450px; 
   height: auto;
   display: block;
 }
@@ -437,7 +437,7 @@ body {
 }
 
 .Mff-app-title img {
-  width: 400px;  
+  width: 300px;  
   height: auto;
   display: block;
 }
